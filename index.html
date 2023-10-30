@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Link do CSS--> 
+    <link rel="stylesheet" href="style.css">
+<!--Link do Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<!--Link do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jomhuria&family=Love+Ya+Like+A+Sister&display=swap"
+        rel="stylesheet">
+    <title>Rizoma</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <a href="#"><img src="IMG/logo.svg" id="logo" alt="Logo"></a> <!--Foi inserida a Logo do site-->
+            <p id="textoTopo">uma nova forma de <br>assistir </p> <!--Foi inserido o slogan-->
+    </header>
+    <!--INFORMAÇÕES DO TOPO-->
+    <div class="container">
+        <div id="info">
+<!--Para barra de informações rápidas, são colocados icones(com a tag <img> que busca a imagem dentro da pasta) com sua respectiva informação ao lado(utilizando a tag <p>)-->
+            <div class="logoInfo">
+                <p class="textoInfo"><img src="IMG/claquete.svg" alt="">Escolha o final</p>
+            </div>
+            <div class="logoInfo">
+                <p class="textoInfo"><img src="IMG/cena.svg" alt="">Filmes 100% interativos</p>
+            </div>
+            <div class="logoInfo">
+                <p class="textoInfo"><img src="IMG/olho.svg" alt="">Assista a hora que quiser</p>
+            </div>
+        </div>
+    </div>
+    <!--IMAGEM DE INFORMAÇÃO-->
+    <div class="container">
+<!--Nessa parte uma imagem será colocada ao lado da informação. Para isso, usa-se a tag <img> para a imagem, <h1> para o título da informação e <p> para o conteúdo da informação que queremos passar. -->       
+        <div id="imagemInfo">
+            <img id="img"  src="IMG/controle.svg" alt="Controle apontado para TV"> 
+        <div>
+            <h1 id="titulo-imagemInfo">Explore todas as alternativas</h1>
+            <p id="textinho">Todos os nossos filmes possuem <br> cenas interativas permitindo que o <br> usuário possa
+                alterar a
+                sequência de <br>
+                cenas e decidir o futuro da história. </p>  
+        </div>
+        </div>
+
+    </div>
+    <!--CARROSSEL-->
+    <div class="container">
+        <div id="carrossel">
+<!--Para usarmos o carrossel, é necessário linkar todos os seus elementos e colocar na ordem de apresentação. Aqui foram usados duas setas e sete cards de filmes (todos com a tag <img>).-->
+           <!--Título do carrossel-->
+            <h2 id="tituloCarrossel">Conheça o nosso catálogo</h2> 
+            <!--"Onclick" serve para ativar o código escrito no script-->
+            <div id="div-cards">
+                <img id="setaesquerda" onclick="RolarparaEsquerda()" class="seta" 
+                    src="IMG/setaEsquerda.svg" alt=""> 
+                <img id="filme1" class="cards" src="IMG/filme1.svg" alt="">
+                <img id="filme2" class="cards" src="IMG/filme2.svg" alt="">
+                <img id="filme3" class="cards" src="IMG/filme3.svg" alt="">
+                <img id="filme4" class="cards" src="IMG/filme4.svg" alt="">
+                <img id="filme5" class="cards" src="IMG/filme5.svg" alt="">
+                <img id="filme6" class="cards" src="IMG/filme6.svg" alt="">
+                <img id="filme7" class="cards" src="IMG/filme7.svg" alt="">
+                <img id="setadireita" onclick="RolarparaDireita()" class="seta" src="IMG/setaDireita.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!--FORMULARIO-->
+    <div class="container">
+        <div id="formulario">
+<!--O título do fomulário-->
+            <p><strong>Gostou?</strong> Insira seu email para começar sua assinatura.</p>
+<!--Em 'action' é colocado o link do site que salva os dados informados do forms em uma planilha-->
+            <form action="https://api.sheetmonkey.io/form/kjGZtz5BX6ikE2VkwA7KYA" method="post">
+<!--Botão e Input no Bootstrap--> 
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" required>
+                    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                  </div>               
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <!--PACOTES-->
+    <div class="container">
+        <div id=pacotes>
+<!--Título da div-->             
+            <h2 id="titulo-pacote">Pacotes</h2>           
+       <div id="pacote1">
+<!--Aqui as imagens foram anexadas junto ao texto que as acompanham-->                    
+            <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  1 tela simultânea</p>
+            <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Resolução de 480p</p>
+            <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Baixe em 1 aparelho por vez</p>
+            <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Acesso multiplataforma</p>
+            <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Filmes ilimitados</p>
+            <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Cancele quando quiser</p>
+            <h2 class="precoPacote">R$19,90/mês</h2>
+<!--Nesta parte, uma lista foi criada para informar as formas de pagamento dos planos-->
+            <ul>
+                <li>6X de R$3,31 sem juros</li>
+                <li>Cartões de débito e crédito</li>
+                <li>PIX</li>
+                <li>Boleto</li>
+            </ul>
+        </div>
+        <div id="pacote2">
+<!--Aqui todos os métodos, da primeira parte é usado novamente-->     
+                <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  4 telas simultâneas</p>
+                <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Resolução de 4K</p>
+                <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Baixe em 6 aparelhos por vez</p>
+                <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Acesso multiplataforma</p>
+                <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Filmes ilimitados</p>
+                <p class="infoPacotes"> <img src="IMG/setaPequena.svg" alt="">  Cancele quando quiser</p>
+                <h2 class="precoPacote">R$49,90/mês</h2>
+                <ul>
+                    <li>12X de R$4,15 sem juros</li>
+                    <li>Cartões de débito e crédito</li>
+                    <li>PIX</li>
+                    <li>Boleto</li>
+                </ul>
+            </div>
+            </div>
+    </div>
+    <!--FOOTER-->
+   <footer>
+<!--Aqui são adicionados os links com dados adicionais e a logo no rodapé-->
+<!--'_blank' serve para abrir o link em outra janela-->
+        <a target="_blank" href="#"><p class="infoFooter">PERGUNTAS FREQUENTES</p></a>
+        <a target="_blank" href="#"><p class="infoFooter">CENTRAL DE AJUDA</p></a>
+        <a target="_blank" href="#"><p class="infoFooter">TERMOS DE USO</p></a>
+        <a target="_blank" href="#"><p class="infoFooter">ENTRE EM CONTATO</p></a>
+        <a href="#"><img id="logoFooter" src="IMG/logo.svg" alt=""></a>
+   </footer>
+<!--Link do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<!--Link do Script-->    
+    <script src="script.js"></script>
+</body>
+
+</html>

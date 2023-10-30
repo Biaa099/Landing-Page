@@ -1,0 +1,213 @@
+/*Margem da logo */
+#logo {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/* Configurações do texto(slogan)*/
+#textoTopo {
+    color: #000;
+    font-family: Love Ya Like A Sister;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 15px;
+    margin-left: 750px;
+    padding-bottom: 20px;
+/* Essas informações foram utilizadas do Figma do projeto, que já oferece o tamanho, cor, fonte, direção, etc..*/
+}
+
+/* Configurações do fundo do cabeçalho(header)*/
+header {
+    background-image: url(IMG/fundoTopo.svg);
+    color: black;
+}
+/* Colocando GRID para que as informações fiquem organizadas na horizontal*/
+#info {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+}
+/* Configurações de margem das informações rápidas*/
+.logoInfo {
+    margin: 50px 0px 50px 100px;
+    padding: 25px;
+}
+/* Configurações do texto para que ele fique alinhado às imagens*/
+.textoInfo {
+    display: flex;
+    align-items: center;
+}
+/* Colocando GRID para que a imagem e as informações fiquem alinhadas uma ao lado da outra*/
+#imagemInfo {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    margin-bottom: 70px;
+}
+/* Configuração da imagem*/
+#img{
+    margin: 50px 25px 50px 100px;
+}
+/* Configurações do título do texto*/
+#titulo-imagemInfo{
+    margin-top: 100px;
+    color: #092D39;
+    font-family: Jomhuria;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+/* Essas informações foram utilizadas do Figma do projeto, que já oferece o tamanho, cor, fonte, direção, etc..*/
+}
+/* Configuração do texto*/
+#textinho {
+    margin-top: 15px;
+    margin-left: 38px;
+}
+/* Configuração do carrossel*/
+#carrossel {
+    padding: 25px;
+}
+/* Configuração do título do carrossel*/
+#tituloCarrossel {
+    color: #092D39;
+    font-family: Jomhuria;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+/* Essas informações foram utilizadas do Figma do projeto, que já oferece o tamanho, cor, fonte, direção, etc..*/
+}
+/* Colocando espaçamento e GRID nos card*/
+#div-cards {
+    margin-top: 25px;
+    display: grid;
+    grid-auto-flow: column;
+}
+/* Configuração dos cards*/
+.cards {
+    margin-left: 70px;
+}
+
+/* Configuração dos elementos do Carrossel, a seta e os filmes que não aparecem no primeiro momento do site precisam ser ocultados no css para depois serem ativados no script*/
+#setaesquerda {
+    display: none;
+}
+
+#filme5 {
+    display: none;
+}
+
+#filme6 {
+    display: none;
+}
+
+#filme7 {
+    display: none;
+}
+
+/* Configuração da seta*/
+.seta {
+    margin-top: 70px;
+    cursor: pointer;
+}
+/* Configuração da seta quando o mouse passa por ela*/
+.seta:hover {
+    transform: translateY(-7px);
+    transition-duration: 0.5s;
+}
+/* Configuração do formulário*/
+#formulario {
+    margin-top: 60px;
+}
+/* Configuração do título da seção sobre pacotes*/
+#titulo-pacote {
+    color: #092D39;
+    font-family: Jomhuria;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+/* As informações acima foram utilizadas do Figma do projeto, que já oferece o tamanho, cor, fonte, direção, etc..*/
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 70px;
+}
+/* Configuração do texto da seção de pacotes*/
+.precoPacote {
+    color: #092D39;
+    font-family: Jomhuria;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+/* As informações acima foram utilizadas do Figma do projeto, que já oferece o tamanho, cor, fonte, direção, etc..*/
+    margin-top: 20px;
+
+}
+/* Configuração da lista da primeira parte da seção de pacotes */
+#pacote1 li {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* As informações acima foram utilizadas do Figma do projeto, que já oferece o tamanho, cor, fonte, direção, etc..*/
+}
+/* Configuração da lista da segunda parte da seção de pacotes */
+#pacote2 li {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* As informações acima foram utilizadas do Figma do projeto, que já oferece o tamanho, cor, fonte, direção, etc..*/
+}
+/* Colocando GRID para que as informações fiquem posicionado na horizontal */
+#pacotes{
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+/* Configuração do rodapé(Footer)*/
+footer {
+    background-color: black;
+    margin: 0;
+}
+/* Configuração do texto do Footer*/
+.infoFooter {
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+/* Configuração da logo do Footer*/
+#logoFooter{
+    margin-left: 950px;
+    margin-bottom: 50px;
+}
+/* Desligando a linha de link(azul), nos links do Footer*/
+a:link{
+    text-decoration: none;
+}
+/* Configurando o link para quando o mouse passar por eles*/
+a:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+/* Configuração do texto do Footer*/
+p {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
